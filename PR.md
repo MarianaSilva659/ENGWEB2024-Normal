@@ -85,3 +85,9 @@ Depois de ter o ficheiro no formato json, coloquei no mondodb com os seguintes c
  ```
 
  Depois foi realizado o desenvolvimento dos dos exercícios.
+
+
+# Para correr o trabalho em ambos os exercíios basta fazer:
+
+- npm i
+- npm start
