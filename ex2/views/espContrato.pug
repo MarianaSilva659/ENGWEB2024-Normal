@@ -1,0 +1,43 @@
+extends layout
+
+block content
+    .w3-card-4
+      header.w3-container.w3-pink
+        h1 Contrato #{contrato._id}
+      
+      .w3-container
+        ul.w3-ul.w3-card-4(style="width:50%")
+          li
+            b Número de Anúncio:
+            |  #{contrato.nAnuncio ? contrato.nAnuncio : '-------------------'}
+          li
+            b Tipo Procedimento:
+            |  #{contrato.tipoprocedimento ? contrato.tipoprocedimento : '-------------------'}
+          li
+            b Objeto de Contrato:
+            |  #{contrato.objectoContrato ? contrato.objectoContrato : '-------------------'}
+          li
+            b Data de Publicação:
+            |  #{contrato.dataPublicacao ? contrato.dataPublicacao : '-------------------'}
+          li
+            b Data de Celebração de Contrato:
+            |  #{contrato.dataCelebracaoContrato ? contrato.dataCelebracaoContrato : '-------------------'}
+          li
+            b Preço Contratual(€):
+            |  #{contrato.precoContratual ? contrato.precoContratual : '-------------------'}
+          li
+            b Prazo de Execução:
+            |  #{contrato.prazoExecucao ? contrato.prazoExecucao : '-------------------'}
+          li
+            b NIPC:
+            |  #{contrato.NIPC_entidade_comunicante ? contrato.NIPC_entidade_comunicante : '-------------------'}
+          li
+            b Entidade Comunicadora:
+            |  #{contrato.entidade_comunicante ? contrato.entidade_comunicante : '-------------------'}
+          li
+            b Fundamentação:
+            |  #{contrato.fundamentacao ? contrato.fundamentacao : '-------------------'}
+      
+      footer.w3-container.w3-pink
+            a(href="/").w3-button.w3-red Voltar Página Inicial
+            address Gerado para o Teste - Mariana Silva
